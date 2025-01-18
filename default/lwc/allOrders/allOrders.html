@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-text-heading_large slds-m-bottom_medium" style="font-weight: bold;">ALL ORDERS</div>
+    <div for:each={allOrders} for:item="u" key={u}>
+    <div  style="border: 1px solid black; border-radius: 12px; padding: 10px;height:80px;cursor: pointer" class="slds-m-bottom_medium" data-id={u.Name} onclick={reditectoOrderDetail}>
+        <div style="display: flex;justify-content: space-between;font-weight:600" class="slds-text-heading_medium" data-id={u.Name}>
+            <div data-id={u.Name}>
+                <div data-id={u.Name}>ORDER ID: {u.Name}</div>
+                <div data-id={u.Name}>No of Items: {u.No_of_items__c}</div>
+            </div>
+            <div data-id={u.Name}>
+                <div data-id={u.Name}>Value: ${u.Amount__c}</div>
+                <div data-id={u.Name}>Payment Mode: {u.Payment_Mode__c}</div>
+            </div>
+        </div>
+    </div>
+</div>
+</template>

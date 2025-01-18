@@ -1,0 +1,83 @@
+<template>
+    <div class="slds-grid slds-gutters datatopdf">
+        <div class="slds-col slds-size_2-of-3">
+            <div class="slds-box slds-box_x-small slds-m-around_small">
+                <h2 class="slds-text-align_center slds-text-heading_large">All Items</h2>
+                <div for:each={reqdata} for:item="item" key={item.Id}>
+                    <div key={item.Id}>
+                        <div class="slds-border_top slds-m-vertical_small"></div>
+                        <div class="slds-p-around_small">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_1-of-3">
+                                    <span>
+                                        <img src={item.ImageURL__c} alt="no image..." />
+                                    </span>
+                                </div>
+                                <div class="slds-col slds-size_2-of-3">
+                                    <span>
+                                        <h3 class="slds-text-heading_medium">{item.Title__c}</h3>
+                                        <p class="slds-text-heading_medium">$:{ item.Price__c}</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="slds-col slds-size_1-of-3 ">
+            <div for:each={orderdata} for:item="orderdata" key={orderdata.Id}>
+                <div class="slds-box slds-box_x-small slds-m-around_small">
+                    <h2 class="slds-align_absolute-center slds-text-heading_large">Order Details</h2>
+                    <div class="slds-border_top slds-m-vertical_small"></div>
+                    <div class="slds-gutters slds-p-around_medium">
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-3 slds-text-heading_small">
+                                <span>Order ID</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <span>{orderdata.Name}</span>
+                            </div>
+                        </div>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-3 slds-text-heading_small">
+                                <span>No of Items</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <span>{orderdata.No_of_items__c}</span>
+                            </div>
+                        </div>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-3 slds-text-heading_small">
+                                <span>Payment Mode</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <span>{orderdata.Payment_Mode__c}</span>
+                            </div>
+                        </div>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-3 slds-text-heading_small">
+                                <span>Order Value</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <span>${orderdata.Amount__c}</span>
+                            </div>
+                        </div>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_2-of-3 slds-text-heading_small">
+                                <span>Status</span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-3">
+                                <span>{orderdata.Order_Status__c}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-text-align_center">
+                        <lightning-button label="Download Invoice" variant="destructive" onclick={generateInvoice}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

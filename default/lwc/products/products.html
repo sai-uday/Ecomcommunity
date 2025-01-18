@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+        <lightning-layout multiple-rows>
+            <template for:each={reqdata} for:item="item">
+                <lightning-layout-item key={item.id} size="12" small-device-size="6" medium-device-size="4" large-device-size="3" padding="around-small">
+                    <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+                        <img src={item.image}  alt="no image..." width="150" height="25">
+                        <p class="slds-text-title">{item.title}</p>
+                        <p class="slds-text-heading_small slds-m-top_small slds-m-bottom_small">${item.price}</p>
+                        <lightning-button label="Add to Cart" variant="brand"></lightning-button>
+                    </div>
+                </lightning-layout-item>
+            </template>
+        </lightning-layout>
+    </div>
+</template>

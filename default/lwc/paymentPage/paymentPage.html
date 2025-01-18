@@ -1,0 +1,27 @@
+<template>
+    <!-- <p class="slds-text-heading_small">{activeSectionMessage}</p> -->
+
+    <div class="slds-text-heading_small" style="font-weight: bold;">Amount to be Paid: ${sum}</div>
+    <lightning-accordion class="slds-m-top_medium"
+                         onsectiontoggle={handleToggleSection}
+                         active-section-name="B">
+        <lightning-accordion-section name="A" label="UPI PAYMENT" onclick={generateQR}>
+            <div class="slds-align_absolute-center slds-m-top_small slds-m-bottom_small">
+                Scan the QR Code
+            </div>
+            <div class="slds-align_absolute-center region-for-qr" style="height: 150px;width:150px;display:flex">
+                    
+            </div>
+            <div class="slds-align_absolute-center slds-m-top_small">
+                <lightning-button style="font-weight: bold;" variant="success" data-name="UPI" label="Check Status" onclick={redirectToOrders}></lightning-button>
+            </div>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="B" label="CASH ON DELIVERY">
+           <div class="slds-align_absolute-center" >
+                    <lightning-button style="font-weight: bold;"  variant="success" data-name="Cash on Delivery" label="Pay Cash on Delivery" onclick={redirectToOrders}></lightning-button>
+            </div>
+        </lightning-accordion-section>
+
+    </lightning-accordion>
+</template>
