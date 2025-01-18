@@ -32,8 +32,18 @@ Usage
 
 ---
 
-### **Screenshots**  
-_Add screenshots or GIFs of the app to showcase its functionality._
-![image](https://github.com/user-attachments/assets/42ce91a1-23ed-4c2a-9c50-03dbefe96721)
+Screenshots:
+![image](https://github.com/user-attachments/assets/1f35a83c-cf37-45bb-a660-17f8475a793f)
+![image](https://github.com/user-attachments/assets/f50d6b44-cc17-4838-a88f-c7d20a13e8f0)
+![image](https://github.com/user-attachments/assets/5da36b79-929d-4b2d-bc3a-b204726ba9ae)
+![image](https://github.com/user-attachments/assets/9ec80ba0-c219-4ab3-a269-73c1f6281677)
+![image](https://github.com/user-attachments/assets/70e32a34-bb21-4250-b311-60d5e654a9e8)
+![image](https://github.com/user-attachments/assets/2054a030-09cf-4eda-b6eb-4d377e1055d1)
+
+
+
+
+
+
 
 ---
