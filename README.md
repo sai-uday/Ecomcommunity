@@ -3,10 +3,12 @@ Ecom Website Link: https://cunning-koala-l7eh90-dev-ed.trailblaze.my.site.com/co
 
 
 Project Description:
+
 This project is a feature-rich e-commerce website built on **Salesforce Experience Cloud**, designed to deliver a seamless shopping experience. The application offers essential e-commerce functionalities, including adding items to a cart, updating cart items, checking out, placing orders, and viewing order details.
 
 ---
 Features: 
+
 Add to Cart: Effortlessly add items to the shopping cart.  
 Update Cart: Modify quantities or remove items from the cart.  
 Checkout Page: Simplified and intuitive checkout process for users.  
